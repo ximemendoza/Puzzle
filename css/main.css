@@ -1,12 +1,43 @@
 /* elegir el tipo de letra para el documento */
 
-* {
-  .oswald-pfont {
-    font-family: "Oswald", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 400;
-    font-style: normal;
-    /*<weight>: Use a value from 200 to 700
+p,
+a,
+small {
+  font-family: "Oswald", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  /*<weight>: Use a value from 200 to 700
   <uniquifier>: Use a unique and descriptive class name*/
-  }
+}
+
+/*HEADER*/
+
+#Logo {
+  font-family: "WindSong", cursive;
+  font-weight: 500;
+  font-style: normal;
+  color: #d8c7b5;
+}
+
+header {
+  background-color: #67625c;
+}
+ul {
+  list-style: none;
+  padding-left: 0%;
+}
+a {
+  color: #d8c7b5;
+}
+/*MAIN*/
+main {
+  background-color: #d8c7b5;
+}
+/*FOOTER*/
+footer {
+  margin-top: 3rem;
+  border: top 1px;
+  background-color: #67625c;
+  color: #d8c7b5;
 }
