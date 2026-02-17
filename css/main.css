@@ -2,7 +2,8 @@
 
 p,
 a,
-small {
+small,
+li {
   font-family: "Oswald", sans-serif;
   font-optical-sizing: auto;
   font-weight: 400;
@@ -10,18 +11,28 @@ small {
   /*<weight>: Use a value from 200 to 700
   <uniquifier>: Use a unique and descriptive class name*/
 }
-
-/*HEADER*/
-
-#Logo {
-  font-family: "WindSong", cursive;
-  font-weight: 500;
-  font-style: normal;
-  color: #d8c7b5;
+body {
+  margin: 0;
+}
+a {
+  text-decoration: none;
 }
 
+/*HEADER*/
 header {
   background-color: #67625c;
+  padding-left: 1rem;
+  position: sticky;
+  display: grid;
+  gap: 1rem;
+  grid-auto-rows: 18vh;
+  grid-template-areas:
+    "logo head1"
+    "head2 .";
+  justify-items: stretch;
+}
+.site-nav li {
+  margin-left: 6vw;
 }
 ul {
   list-style: none;
@@ -30,6 +41,46 @@ ul {
 a {
   color: #d8c7b5;
 }
+
+.logo {
+  font-family: "Parisienne", cursive;
+  font-weight: 400;
+  font-style: normal;
+  color: #d8c7b5;
+  grid-area: logo;
+}
+.header1 {
+  display: flex;
+  align-items: center;
+  margin-left: 3 rem;
+  grid-area: head1;
+}
+
+.header2 {
+  display: flex;
+  flex-grow: 1;
+  align-items: center;
+  margin-left: 5 rem;
+  grid-area: head2;
+}
+
+.heart-icon {
+  width: 1.5rem;
+}
+.search-icon {
+  width: 2rem;
+}
+.Cart-icon {
+  width: 1.7rem;
+}
+/*
+.header1 ul {
+  list-style: none;
+  padding-left: 0;
+  display: flex;
+  flex-grow: 1;
+}
+*/
 /*MAIN*/
 main {
   background-color: #d8c7b5;
@@ -37,7 +88,53 @@ main {
 /*FOOTER*/
 footer {
   margin-top: 3rem;
+  margin: 0;
   border: top 1px;
+  border-color: #67625c;
   background-color: #67625c;
   color: #d8c7b5;
+}
+
+footer {
+  display: grid;
+  gap: 1rem;
+  grid-auto-rows: 18vh;
+  grid-template-areas:
+    "footer1 footer2 footer3"
+    "copyr  . .";
+  justify-items: stretch;
+}
+
+.footer1 {
+  grid-area: footer1;
+  font-weight: 300;
+  margin-left: 1rem;
+}
+
+.footer1 :first-child {
+  font-weight: 400;
+  font-style: bold;
+}
+.instagram-icon {
+  width: 1.5rem;
+}
+.facebook-icon {
+  width: 1.5rem;
+}
+
+.footer2 {
+  grid-area: footer2;
+  margin-left: 1rem;
+  align-items: center;
+}
+
+.footer3 {
+  grid-area: footer3;
+  margin-left: 1rem;
+  align-items: center;
+}
+
+.copyr {
+  margin-left: 1rem;
+  grid-area: copyr;
 }
