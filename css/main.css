@@ -1,4 +1,4 @@
-/* elegir el tipo de letra para el documento */
+/* Main font and basic design for the webside */
 
 p,
 a,
@@ -8,8 +8,6 @@ li {
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
-  /*<weight>: Use a value from 200 to 700
-  <uniquifier>: Use a unique and descriptive class name*/
 }
 body {
   margin: 0;
@@ -17,27 +15,41 @@ body {
 a {
   text-decoration: none;
 }
-
-/*HEADER*/
-header {
-  background-color: #67625c;
-  padding-left: 1rem;
-  position: sticky;
-  display: grid;
-  gap: 1rem;
-  grid-auto-rows: 18vh;
-  grid-template-areas:
-    "logo head1"
-    "head2 .";
-  justify-items: stretch;
-}
-.site-nav li {
-  margin-left: 6vw;
-}
 ul {
   list-style: none;
   padding-left: 0%;
 }
+
+/*HEADER*/
+header {
+  position: sticky;
+  background-color: #67625c;
+  padding-left: 1rem;
+  margin: 0rem;
+}
+
+.site-nav {
+  display: flex;
+  align-items: center;
+}
+
+.site-nav ul {
+  display: flex;
+  flex-grow: 1;
+  align-items: center;
+  margin-left: 3 rem;
+}
+
+.site-nav li {
+  margin-left: auto;
+  margin-right: 3vw;
+  justify-self: end;
+}
+.site-nav a {
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+
 a {
   color: #d8c7b5;
 }
@@ -45,23 +57,9 @@ a {
 .logo {
   font-family: "Parisienne", cursive;
   font-weight: 400;
-  font-style: normal;
   color: #d8c7b5;
-  grid-area: logo;
-}
-.header1 {
-  display: flex;
-  align-items: center;
-  margin-left: 3 rem;
-  grid-area: head1;
-}
-
-.header2 {
-  display: flex;
-  flex-grow: 1;
-  align-items: center;
-  margin-left: 5 rem;
-  grid-area: head2;
+  height: 3rem;
+  justify-self: start;
 }
 
 .heart-icon {
@@ -73,14 +71,7 @@ a {
 .Cart-icon {
   width: 1.7rem;
 }
-/*
-.header1 ul {
-  list-style: none;
-  padding-left: 0;
-  display: flex;
-  flex-grow: 1;
-}
-*/
+
 /*MAIN*/
 main {
   background-color: #d8c7b5;
@@ -98,7 +89,7 @@ footer {
 footer {
   display: grid;
   gap: 1rem;
-  grid-auto-rows: 18vh;
+  grid-auto-rows: 15vh;
   grid-template-areas:
     "footer1 footer2 footer3"
     "copyr  . .";
