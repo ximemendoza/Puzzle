@@ -3,7 +3,9 @@
 p,
 a,
 small,
-li {
+li,
+h1,
+h2 {
   font-family: "Oswald", sans-serif;
   font-optical-sizing: auto;
   font-weight: 400;
@@ -23,6 +25,9 @@ ul {
 /*HEADER*/
 header {
   position: sticky;
+  top: 0;
+}
+header {
   background-color: #67625c;
   padding-left: 1rem;
   margin: 0rem;
@@ -74,8 +79,70 @@ a {
 
 /*MAIN*/
 main {
-  background-color: #d8c7b5;
+  background-color: #efe2d5;
+  margin: 0vh;
 }
+h1 {
+  margin: 3vh;
+  color: #67625c;
+}
+
+.imgimain {
+  display: flex;
+  justify-self: stretch;
+}
+
+h2 {
+  margin: 0rem;
+  color: #67625c;
+  align-items: center;
+}
+
+.puzzles-main-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+@media screen and (min-width: 450px) {
+  .puzzles-main-grid {
+    grid-template-columns: 1fr;
+    column-gap: 0.13rem;
+  }
+}
+@media screen and (min-width: 700px) {
+  .puzzles-main-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .puzzles-main-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.puzzles-photos {
+  display: grid;
+  grid-template-columns: 1fr;
+  padding-left: 2%;
+}
+
+.heart-outline {
+  width: 1.6rem;
+  grid-area: 1 / 1;
+  justify-self: start;
+  margin: 0.5vw;
+}
+
+.puzzles-photos a {
+  grid-area: 1 / 1;
+}
+
+.puzzles-pieces {
+  width: 20rem;
+  height: 28rem;
+}
+
 /*FOOTER*/
 footer {
   margin-top: 3rem;
