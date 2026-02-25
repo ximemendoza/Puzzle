@@ -1,5 +1,35 @@
-p {
+.product-aumnt {
   font: 300;
-
   padding-left: 3vh;
+  margin: 0rem;
+  color: #514d48;
+  font-family: "Oswald", sans-serif;
+  font-weight: 1000;
+}
+h3 {
+  margin: 0rem;
+  color: #514d48;
+  font-family: "Oswald", sans-serif;
+  font-weight: 1000;
+  align-items: center;
+  justify-self: center;
+  padding: 1%;
+}
+
+.main-puz-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  column-gap: 0.13rem;
+  justify-items: center;
+}
+
+@media screen and (min-width: 570px) {
+  .main-puz-grid {
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+  }
+}
+
+.product-main-1 {
+  padding-left: 6%;
 }

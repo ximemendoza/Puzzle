@@ -74,7 +74,6 @@ h2 {
   align-items: center;
   justify-self: center;
   padding: 1%;
-  padding-bottom: 2vh;
 }
 
 .puzzles-main-grid {
@@ -132,13 +131,14 @@ h2 {
   margin: 0rem;
   color: #514d48;
   font-weight: 400;
+  justify-self: start;
 }
 
 .price-puz {
   margin: 0rem;
   color: #514d48;
   font-weight: 400;
-  padding-left: 0;
+  padding-left: 1%;
   padding-bottom: 2vh;
 }
 

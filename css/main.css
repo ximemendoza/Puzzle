@@ -43,7 +43,7 @@ header {
   flex-grow: 1;
   align-items: center;
   margin-left: 3 rem;
-  justify-self: center;
+  justify-content: space-between;
 }
 
 .header2 {
