@@ -1,0 +1,151 @@
+/* Main font and basic design for the webside */
+
+a,
+small,
+li,
+h1 {
+  font-family: "Oswald", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+body {
+  margin: 0;
+}
+a {
+  text-decoration: none;
+}
+ul {
+  list-style: none;
+  padding-left: 0%;
+}
+/*MAIN*/
+main {
+  background-color: #efe2d5;
+  margin: 0vh;
+}
+h1 {
+  margin: 3vh;
+  color: #67625c;
+}
+
+.mainphoto {
+  position: static;
+  width: 100%;
+}
+
+.imgimain {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* TEXT OVER IMAGE */
+.main-text,
+.main-para {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  z-index: 2;
+  /* chatgpt help me to fix this part of the code  */
+}
+
+.main-text {
+  top: 40%;
+  align-self: center;
+  color: #514d48;
+  font-size: 3rem;
+}
+
+.main-para {
+  top: 52%;
+  align-self: center;
+  margin-top: 3rem;
+  color: #efe2d5;
+  max-width: 70%;
+}
+
+h2 {
+  margin: 0rem;
+  color: #514d48;
+  font-family: "Oswald", sans-serif;
+  font-weight: 1000;
+  align-items: center;
+  justify-self: center;
+  padding: 1%;
+  padding-bottom: 2vh;
+}
+
+.puzzles-main-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  column-gap: 0.13rem;
+  justify-items: center;
+}
+
+@media screen and (min-width: 570px) {
+  .puzzles-main-grid {
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  .puzzles-main-grid {
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+  }
+}
+
+@media screen and (min-width: 1100px) {
+  .puzzles-main-grid {
+    grid-template-columns: repeat(4, 1fr);
+    justify-items: center;
+  }
+}
+
+.puzzles-photos {
+  display: grid;
+  grid-template-columns: 1fr;
+  padding-left: 2%;
+  justify-items: center;
+}
+
+.heart-outline {
+  width: 1.6rem;
+  grid-area: 1 / 1;
+  justify-self: start;
+  margin: 0.5vw;
+}
+
+.puzzles-photos a {
+  grid-area: 1 / 1;
+}
+
+.puzzles-pieces {
+  width: 16rem;
+  height: 20rem;
+}
+
+.PUZ-NAME {
+  margin: 0rem;
+  color: #514d48;
+  font-weight: 400;
+}
+
+.price-puz {
+  margin: 0rem;
+  color: #514d48;
+  font-weight: 400;
+  padding-left: 0;
+  padding-bottom: 2vh;
+}
+
+.history {
+  margin: 0vh;
+  color: #514d48;
+  font-weight: 200;
+  padding-bottom: 0;
+  padding-top: 2vh;
+}

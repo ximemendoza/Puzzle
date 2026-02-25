@@ -54,14 +54,12 @@ header {
   justify-self: end;
 }
 
-.header1 li {
+.header1 li,
+.header2 li {
   margin-left: auto;
   margin-right: 3vw;
 }
-.header2 li {
-  margin-left: auto;
-  margin-right: 1vw;
-}
+
 .site-nav a {
   font-size: 1.2rem;
   font-weight: 400;
@@ -87,95 +85,6 @@ a {
 }
 .Cart-icon {
   width: 1.7rem;
-}
-
-/*MAIN*/
-main {
-  background-color: #efe2d5;
-  margin: 0vh;
-}
-h1 {
-  margin: 3vh;
-  color: #67625c;
-}
-
-.imgimain {
-  display: grid;
-  justify-self: stretch;
-  grid-area: 1 / 1;
-}
-
-.main-text {
-  align-self: center;
-  justify-self: center;
-  color: #514d48;
-}
-
-.main-para {
-  align-self: center;
-  justify-self: center;
-  margin-top: 3rem;
-  color: #efe2d5;
-}
-
-h2 {
-  margin: 0rem;
-  color: #67625c;
-  font-family: "Oswald", sans-serif;
-  font-weight: 1000;
-  align-items: center;
-  justify-self: center;
-  padding: 3%;
-}
-
-.puzzles-main-grid {
-  display: grid;
-  grid-template-columns: 1fr;
-  justify-items: center;
-}
-
-@media screen and (min-width: 450px) {
-  .puzzles-main-grid {
-    grid-template-columns: 1fr;
-    column-gap: 0.13rem;
-    justify-items: center;
-  }
-}
-@media screen and (min-width: 650px) {
-  .puzzles-main-grid {
-    grid-template-columns: repeat(2, 1fr);
-    justify-items: center;
-  }
-}
-
-@media screen and (min-width: 980px) {
-  .puzzles-main-grid {
-    grid-template-columns: repeat(3, 1fr);
-    justify-items: center;
-  }
-}
-
-.puzzles-photos {
-  display: grid;
-  grid-template-columns: 1fr;
-  padding-left: 2%;
-  justify-items: center;
-}
-
-.heart-outline {
-  width: 1.6rem;
-  grid-area: 1 / 1;
-  justify-self: start;
-  margin: 0.5vw;
-}
-
-.puzzles-photos a {
-  grid-area: 1 / 1;
-}
-
-.puzzles-pieces {
-  width: 20rem;
-  height: 28rem;
 }
 
 /*FOOTER*/
