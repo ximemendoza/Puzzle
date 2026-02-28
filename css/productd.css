@@ -27,9 +27,26 @@ h3 {
   .main-puz-grid {
     grid-template-columns: repeat(2, 1fr);
     justify-items: center;
+    padding: 4%;
   }
 }
 
 .product-main-1 {
-  padding-left: 6%;
+  padding-left: 2%;
+}
+
+.product-main-1 {
+  display: grid;
+  grid-template-columns: 1fr;
+  /* padding-left: 2%; */
+  justify-items: center;
+}
+
+.product-main-1 {
+  width: 24rem;
+  height: 28rem;
+}
+
+.grid-product-sp {
+  display: grid;
 }
