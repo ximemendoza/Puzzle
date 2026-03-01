@@ -29,42 +29,6 @@ h1 {
   color: #67625c;
 }
 
-.mainphoto {
-  position: static;
-  width: 100%;
-}
-
-.imgimain {
-  width: 100%;
-  height: auto;
-  display: block;
-}
-
-/* TEXT OVER IMAGE */
-.main-text,
-.main-para {
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-  text-align: center;
-  z-index: 2;
-  /* chatgpt help me to fix this part of the code  */
-}
-
-.main-text {
-  top: 40%;
-  align-self: center;
-  color: #514d48;
-  font-size: 3rem;
-}
-.main-para {
-  top: 52%;
-  align-self: center;
-  margin-top: 3rem;
-  color: #efe2d5;
-  max-width: 70%;
-}
-
 h2 {
   margin: 0rem;
   color: #514d48;
@@ -75,6 +39,91 @@ h2 {
   padding: 1%;
 }
 
+/* first image at the beginig */
+
+.mainphoto {
+  position: static;
+  width: 100%;
+  display: grid;
+  padding: 0;
+  margin: 0;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+}
+
+.imgimain {
+  width: 100%;
+  grid-area: 1 / 1;
+  height: auto;
+}
+
+.mainphoto a {
+  grid-area: 1 / 1;
+}
+
+.text-over-mainp {
+  grid-area: 1 / 1;
+  padding-top: 5%;
+}
+
+.main-text {
+  color: #514d48;
+  margin: 0;
+  font-size: 1.7rem;
+  justify-self: center;
+  align-items: center;
+}
+
+.main-para {
+  margin: 0;
+  color: #efe2d5;
+  max-width: 100%;
+  justify-self: center;
+  align-items: center;
+  font-size: 0.8rem;
+}
+
+@media screen and (min-width: 390px) {
+  .main-text {
+    font-size: 1.7rem;
+  }
+
+  .main-para {
+    font-size: 0.8rem;
+  }
+}
+
+@media screen and (min-width: 570px) {
+  .main-text {
+    font-size: 3rem;
+  }
+
+  .main-para {
+    font-size: 1.3rem;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  .main-text {
+    font-size: 4rem;
+  }
+
+  .main-para {
+    font-size: 1.8rem;
+  }
+}
+
+@media (min-width: 1100px) {
+  .main-text {
+    font-size: 5rem;
+  }
+
+  .main-para {
+    font-size: 2rem;
+  }
+}
+
+/* Puzzle image display in main page */
 .puzzles-main-grid {
   display: grid;
   grid-template-columns: 1fr;
@@ -113,7 +162,7 @@ h2 {
 .heart-outline {
   width: 1.6rem;
   grid-area: 1 / 1;
-  justify-self: start;
+  justify-self: end;
   margin: 0.5vw;
 }
 
@@ -139,12 +188,4 @@ h2 {
   font-weight: 400;
   padding-left: 1%;
   padding-bottom: 2vh;
-}
-
-.history {
-  margin: 0vh;
-  color: #514d48;
-  font-weight: 200;
-  padding-bottom: 0;
-  padding-top: 2vh;
 }
