@@ -1,19 +1,21 @@
-.product-aumnt {
+.product-descp1,
+.product-descp2 {
   font: 300;
-  padding-left: 3vh;
+  padding-left: 3%;
   margin: 0rem;
   color: #514d48;
   font-family: "Oswald", sans-serif;
-  font-weight: 1000;
+  font-weight: 100;
+  padding-right: 3%;
 }
 h3 {
   margin: 0rem;
   color: #514d48;
   font-family: "Oswald", sans-serif;
-  font-weight: 1000;
-  align-items: center;
-  justify-self: center;
-  padding: 1%;
+  font-size: 500;
+  align-items: start;
+  justify-self: start;
+  padding-left: 3%;
 }
 
 .main-puz-grid {
@@ -43,12 +45,14 @@ h3 {
 }
 
 .product-main-1 {
-  width: 24rem;
-  height: 28rem;
+  display: grid;
+  width: 20rem;
+  height: 24rem;
 }
 
 .grid-product-sp {
   display: grid;
+  padding-left: 2%;
 }
 
 .history {
@@ -56,5 +60,30 @@ h3 {
   color: #514d48;
   font-weight: 200;
   padding-bottom: 0;
-  padding-top: 2vh;
+  padding-top: 0;
+  padding-left: 2%;
+  padding-right: 2%;
+}
+
+.cart-butt {
+  display: flex;
+  gap: 20px;
+  font-weight: 300;
+  font-family: "Oswald", sans-serif;
+  color: #d8c7b5;
+  padding: 0%;
+  align-items: center;
+  justify-self: center;
+}
+
+.product-p-d {
+  font-size: 300;
+}
+
+button {
+  background-color: #67625c;
+  border-color: #d8c7b5;
+  margin-left: 2%;
+  margin-right: 2%;
+  margin-bottom: 2%;
 }

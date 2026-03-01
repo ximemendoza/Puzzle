@@ -83,6 +83,8 @@ h2 {
   font-size: 0.8rem;
 }
 
+/* Responsive main photo of the main page */
+
 @media screen and (min-width: 390px) {
   .main-text {
     font-size: 1.7rem;
@@ -131,6 +133,7 @@ h2 {
   justify-items: center;
 }
 
+/* Responsive main grid */
 @media screen and (min-width: 570px) {
   .puzzles-main-grid {
     grid-template-columns: repeat(2, 1fr);
@@ -188,4 +191,14 @@ h2 {
   font-weight: 400;
   padding-left: 1%;
   padding-bottom: 2vh;
+}
+
+.history {
+  margin: 0vh;
+  color: #514d48;
+  font-weight: 200;
+  padding-bottom: 0;
+  padding-top: 0;
+  padding-left: 2%;
+  padding-right: 2%;
 }

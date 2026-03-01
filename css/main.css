@@ -1,5 +1,4 @@
 /* Main font and basic design for the webside */
-
 p,
 a,
 small,
@@ -93,7 +92,7 @@ a {
   justify-content: space-between;
 }
 
-.menu-toggle {
+.menu-ham {
   display: none;
   font-size: 2rem;
   background: none;
@@ -102,13 +101,13 @@ a {
   cursor: pointer;
 }
 
-/* MOBILE */
+/* Responsive nav */
 @media (max-width: 768px) {
   .site-nav {
     flex-wrap: wrap;
   }
 
-  .menu-toggle {
+  .menu-ham {
     display: block;
   }
 
@@ -161,6 +160,12 @@ footer {
   font-weight: 400;
   font-style: bold;
 }
+
+.imginst-fb {
+  display: flex;
+  gap: 20px;
+}
+
 .instagram-icon {
   width: 1.5rem;
 }
