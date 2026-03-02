@@ -87,3 +87,32 @@ button {
   margin-right: 2%;
   margin-bottom: 2%;
 }
+
+.CARTT {
+  align-content: start;
+  padding-left: 5%;
+  align-items: start;
+  display: flex;
+  margin: 0;
+}
+
+.cart-grid-p {
+  display: grid;
+  gap: 1vw;
+  grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr));
+}
+
+.cart-item {
+  background: #f5f5f5;
+  padding: 1rem;
+  border-radius: 10px;
+  text-align: center;
+  position: relative;
+}
+
+.cart-img {
+  width: 100%;
+  max-height: 200px;
+  object-fit: cover;
+  margin-bottom: 1rem;
+}
