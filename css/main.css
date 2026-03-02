@@ -128,6 +128,7 @@ a {
   .header2.active {
     display: flex;
   }
+  /* chatgpt suggest to add this last part */
 }
 
 /*FOOTER*/
