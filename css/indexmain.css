@@ -37,6 +37,7 @@ h2 {
   align-items: center;
   justify-self: center;
   padding: 1%;
+  text-align: center;
 }
 
 /* first image at the beginig */
@@ -64,6 +65,7 @@ h2 {
 .text-over-mainp {
   grid-area: 1 / 1;
   padding-top: 5%;
+  text-align: center;
 }
 
 .main-text {
